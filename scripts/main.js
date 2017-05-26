@@ -14,9 +14,6 @@ function buttonClicked() {
     console.log(buttonID + "button clicked");
 
     switch (buttonID) {
-        case "busPredictorPage":
-            window.open("../BusPredictionsWebpage", "_self");
-            break;
         case "home":
             window.open("./index.html", "_self");
             break;
