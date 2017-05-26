@@ -23,7 +23,7 @@ function buttonClicked() {
             window.open("/index.html", "_self");
             break;
         case "photoshop":
-            window.open("/pages/photoshop.html", "_self");
+            window.open("./pages/photoshop.html", "_self");
             break;
 
     }
