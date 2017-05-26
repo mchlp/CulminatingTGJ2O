@@ -6,6 +6,7 @@ function pageReady() {
     //button press
     $("button").click(buttonClicked);
     $(window).scroll(pageScroll);
+    w3.includeHTML();
 }
 
 //button clicked
