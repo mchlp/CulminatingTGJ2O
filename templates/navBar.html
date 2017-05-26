@@ -5,12 +5,14 @@
     <link rel="stylesheet" href="styles/w3.css">
     <link rel="stylesheet" href="styles/main.css">
     <script src="scripts/main.js"></script>
+    <script src="w3.js"</script>
 </head>
 
 <body>
-    <div id="title" class="w3-container w3-teal">
-        <h1>TGJ2O Digital Portfolio</h1>
-    </div>
+    <div w3-include-html="header.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
 
     <div id="navBar" class="fixed-nav-bar">
         <div class="w3-bar w3-dark-grey w3-card-2">
