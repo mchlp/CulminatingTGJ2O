@@ -20,10 +20,10 @@ function buttonClicked() {
             window.open("../BusPredictionsWebpage", "_self");
             break;
         case "home":
-            window.open("./index.html", "_self");
+            window.open("/index.html", "_self");
             break;
         case "photoshop":
-            window.open("./photoshop.html", "_self");
+            window.open("/pages/photoshop.html", "_self");
             break;
 
     }
