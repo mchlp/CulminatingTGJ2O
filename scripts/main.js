@@ -1,5 +1,3 @@
-
-
 //when document is ready
 $(document).ready(pageReady);
 
@@ -15,7 +13,7 @@ function buttonClicked() {
     var buttonID = this.id;
     console.log(buttonID + "button clicked");
 
-    switch(buttonID) {
+    switch (buttonID) {
         case "busPredictorPage":
             window.open("../BusPredictionsWebpage", "_self");
             break;
@@ -33,8 +31,7 @@ function buttonClicked() {
 function pageScroll() {
     if ($(window).scrollTop() > 0) {
         $('#navBar').addClass("nav-bar-fixed");
-    }
-    else {
+    } else {
         $('#navBar').removeClass("nav-bar-fixed");
     }
 }
