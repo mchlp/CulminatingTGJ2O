@@ -15,10 +15,10 @@ function buttonClicked() {
 
     switch (buttonID) {
         case "home":
-            window.open("./index.html", "_self");
+            window.open("/CulminatingTGJ2O/", "_self");
             break;
         case "photoshop":
-            window.open("./photoshop.html", "_self");
+            window.open("/CulminatingTGJ2O/pages/photoshop", "_self");
             break;
 
     }
