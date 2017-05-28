@@ -1,8 +1,32 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<image>
-    <title>Layering Assignment</title>
-    <img>https://pzkcfg.by3302.livefilestore.com/y4mhRjHQvs3bkreSsQioD3D_pwdX9utNIeORUGfjO3U627qVZc0f8Wf-0X4Wmr2EOdwNcFN2LIQjSHqcBw9XQqiFpNRkCe7QhZycGmlgPzs2mV5QeDMKkhxa0sPfOpzxv3sQzvBnP3rL2Wjh1pWXoqzRcH2mZ5pJhW7vu9xxZMQ3Y-2l9DxHqHF3X6XFMCj63dBLTuHsgCTNQpR5VwbeRnEzQ?width=2400&height=3000&cropmode=none<img>
-            <alt>Pu.Layering</alt>
-            <download></download>
-        </image>
-    </xml>
+<content>
+    <image>
+        <title>Layering Assignment</title>
+        <id>layering</id>
+        <img>
+            <![CDATA[https://pzkcfg.by3302.livefilestore.com/y4mhRjHQvs3bkreSsQioD3D_pwdX9utNIeORUGfjO3U627qVZc0f8Wf-0X4Wmr2EOdwNcFN2LIQjSHqcBw9XQqiFpNRkCe7QhZycGmlgPzs2mV5QeDMKkhxa0sPfOpzxv3sQzvBnP3rL2Wjh1pWXoqzRcH2mZ5pJhW7vu9xxZMQ3Y-2l9DxHqHF3X6XFMCj63dBLTuHsgCTNQpR5VwbeRnEzQ?width=2400&height=3000&cropmode=none]]>
+        </img>
+        <alt>Pu.Layering</alt>
+        <download></download>
+    </image>
+
+    <image>
+        <title>Vintage Advertisement</title>
+        <id>vintAd</id>
+        <img>
+            <![CDATA[https://pzjmlq.by3302.livefilestore.com/y4mWOzlqWMp5XFiy4gUq9plO4cF74LEV9NALf_k0REV8qBuUW293f4XC3gpALf98ADEqt1Vc-ikNLGOiKcdjS97JPF_0iYuErbWn96tmxvE5N43obWszUw1KMD1vjtddTyUy8TNH6fXVtXrTUQs8lrf0WrR-YAp3ev5C_IQPTc_3cOBWyBk0F-wZMKc8lie0ukapL0SHNQfZ-mB_3LjfZM-XA?width=1920&height=1080&cropmode=none]]>
+        </img>
+        <alt>Pu.VintageAdvertisement</alt>
+        <download></download>
+    </image>
+
+    <image>
+        <title>Odd Skyline</title>
+        <id>skyline</id>
+        <img>
+            <![CDATA[https://pzjf5g.by3302.livefilestore.com/y4m2n4TEI7SLUrUtQRv6rcYUWl4Mn4yyk0gGUG8tKLES7vrv0wF_BlfKUCVzWtBuLJCN40XI6ZyUe1pmFWif5kjGlDcBU8yePpRIZ9ggrtiEsWVyzaSaMIslsRmI47OYn0pMBOgezbvO9UeC1ori7df3iXuYXZSgLEdlEX8d7nBBaEj2dVxlT03kueh_Ktn_4p1HAa_oA8RZhQMQnOba3nfHA?width=1920&height=1200&cropmode=none]]>
+        </img>
+        <alt>Pu.OddSkyline</alt>
+        <download></download>
+    </image>
+</content>
