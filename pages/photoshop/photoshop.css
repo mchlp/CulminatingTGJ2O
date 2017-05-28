@@ -1,9 +1,3 @@
 .blur {
     filter: blur(5px);
 }
-
-.cropped {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-}

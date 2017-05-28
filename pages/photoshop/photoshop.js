@@ -1,3 +1,5 @@
+var a;
+
 //when document is ready
 $(document).ready(pageReady);
 
@@ -10,4 +12,17 @@ function pageReady() {
 function buttonPress() {
     buttonID = this.id;
     console.log(buttonID);
+}
+
+function getContent() {
+    $.ajax({
+        type: "GET",
+        url: "include/content.xml",
+        xml: "xml",
+        async: true,
+        sucess: function(data) {
+            a = data;
+            console.log(data)
+        }
+    })
 }
