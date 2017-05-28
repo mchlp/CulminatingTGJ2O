@@ -16,14 +16,21 @@
     <div class="w3-container">
         <h3>Video Editing Stuff</h3>
     </div>
-    <div class="w3-container">
-        <h4>30 Second Stop Motion</h4>
-        <video class="w3-margin" width="50%" height="auto" controls>
-            <source src="include/stopMotion1.mp4" type="video/mp4">
-            Your browser is unable to play the video.
-        </video>
+    <div class="w3-card w3-margin w3-hover-shadow">
+        <header class="w3-blue w3-display-container w3-container">
+            <h4>30 Second Stop Motion</h4>
+            <span id="close-1" class="w3-container w3-display-topright w3-btn" onclick="buttonPress()">
+                <h4>+</h4>
+            </span>
+        </header>
+        <div class="w3-light-grey">
+                <video class="w3-margin" width="50%" height="auto" controls>
+                <source src="include/stopMotion1.mp4" type="video/mp4">
+                Your browser is unable to play the video.
+            </video>
+        </div>
     </div>
-    <div class="w3-container">
+    <div class="w3-container w3-panel w3-card">
         <h4>3 Minute Stop Motion</h4>
         <video class="w3-margin" width="50%" height="auto" controls>
             <source src="include/stopMotion2.mp4" type="video/mp4">
