@@ -40,6 +40,7 @@ function parseXML(data) {
         imageObj["imgLink"] = image.getElementsByTagName("img")[0].textContent.trim();
         imageObj["alt"] = image.getElementsByTagName("alt")[0].textContent;
         imageObj["downloadLink"] = image.getElementsByTagName("download")[0].textContent;
+        imageObj["class"] = image.getElementsByTagName("class")[0].textContent;
         colObjs.push(imageObj);
         if (colCount == 3) {
             content.push(colObjs);
@@ -64,7 +65,7 @@ function showContent() {
             <div class="w3-third">
                 <div id="` + elementContent["id"] + `" class="w3-card w3-hover-shadow w3-grey _image" style="text-align:center">
                     <div>
-                        <img class="" style="object-fit:cover" height="300vh" width="100%" src="` + elementContent["imgLink"] + `" alt="` + elementContent["alt"] + `">
+                        <img class="` + elementContent["class"] + `" style="object-fit:cover" height="300vh" width="100%" src="` + elementContent["imgLink"] + `" alt="` + elementContent["alt"] + `">
                     </div>
                     <h3 class="w3-center">` + elementContent["title"] +
                 `</h3>
