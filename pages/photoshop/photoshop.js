@@ -31,11 +31,11 @@ function buttonPress() {
         console.log("W > H");
         $(clickedElement).find("img").css("height", "auto")
         $(clickedElement).find("img").css("width", "100%")
-        $(modalContent).css("width", "70%");
+        $(modalContent).css("width", "60%");
         $(modalContent).css("height", "auto");
     } else {
         console.log("H > W");
-        $(clickedElement).find("img").css("height", screen.height*0.7+"px")
+        $(clickedElement).find("img").css("height", screen.height*0.6+"px")
         $(clickedElement).find("img").css("width", "auto")
         $(modalContent).css("width", "auto");
         $(modalContent).css("height", "auto");
