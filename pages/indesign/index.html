@@ -2,19 +2,27 @@
 <html>
 
 <head>
-    <title>InDesign - Digital Portfolio</title>
+    <title>Photoshop - Digital Portfolio</title>
     <script src="/CulminatingTGJ2O/scripts/jquery.min.js"></script>
     <script src="/CulminatingTGJ2O/scripts/w3.js"></script>
     <script src="/CulminatingTGJ2O/scripts/main.js"></script>
     <script src="indesign.js"></script>
     <link rel="stylesheet" href="/CulminatingTGJ2O/styles/w3.css">
     <link rel="stylesheet" href="/CulminatingTGJ2O/styles/main.css">
+    <link rel="stylesheet" href="indesign.css">
 </head>
 
 <body>
     <div w3-include-html="/CulminatingTGJ2O/views/navBar.html"></div>
     <div class="w3-container">
         <h3>InDesign Stuff</h3>
+    </div>
+    <div id="content" class="w3-margin"></div>
+
+    <div id="modal" class="w3-modal" onclick="this.style.display='none'" style="z-index:100;">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-bottomright">&times;</span>
+        <div id="modal-content" class="w3-modal-content w3-animate-opacity w3-display-middle" style="width:auto; height:auto; display:inline-block; align-items:center">
+        </div>
     </div>
 </body>
 

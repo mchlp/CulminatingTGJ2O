@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<content>
+    <image>
+        <title>Business Card</title>
+        <id>businessCard</id>
+        <img>
+            <![CDATA[https://qqc8cg.by3302.livefilestore.com/y4pHPp7PWtf3ioFGiSs9UNKR-bXhYhjJLDI6E3fjtMZtPhO3MR8EtrOXiDa5Kk58ckKmBGWBNw9rz3DNFgn30WjBJzlw0mPgFA9u24O5_TKv0wUN-h2r-waXEE4SMVkFzRJyjk1qDhT-LosP1j6dERFQrGIjSHgXsPsnTO3xh2v_V-LLN1HNct2bUxqNbCoKsxd0beQsQP1EnOiMUiwJnnAiA/Pu_BusinessCard.jpg?psid=1]]>
+        </img>
+        <class></class>
+        <alt>Pu.BusinessCard</alt>
+        <download></download>
+    </image>
+
+    <image>
+        <title>Letter Head</title>
+        <id>letterHead</id>
+        <img>
+            <![CDATA[https://qqc8cg.by3302.livefilestore.com/y4p5Sf38XU8DTChxKc8anxx_frbZ7gBJ5CVcw3j1SHOIo-s0jEN37t2BOIe_ECLKHfR9mwv6oISCEFhqVn0VqjXcrOeuahtzO92VzqJSHSsmVzn8e5fVjcH-4HOaLfVFRg4dqyPiCwxExIAimcBQZjBpF4d2D1B_ANSohdLOVBSL3aK0XgjOB8nW9JqMA5w-kFiHQd4o-KcIdfrYSE8cAPnEA/Pu_LetterheadNew.jpg?psid=1]]>
+        </img>
+        <class></class>
+        <alt>Pu.LetterHead</alt>
+        <download></download>
+    </image>
+</content>
