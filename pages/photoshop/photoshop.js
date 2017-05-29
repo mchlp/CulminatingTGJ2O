@@ -6,13 +6,44 @@ $(document).ready(pageReady);
 //page ready
 function pageReady() {
     $("#photoshop").addClass("w3-green");
-    $("._image").click(buttonPress);
     getContent();
+}
+
+function afterShowContent() {
+    $("._image").click(buttonPress);
 }
 
 function buttonPress() {
     buttonID = this.id;
-    console.log(buttonID);
+
+    $("#modal")[0].style.display = "block";
+
+    var modalContent = $("#modal-content")[0];
+    $(modalContent).empty();
+
+    console.log($(this).find("img"));
+
+    var clickedElement = $(this).clone();
+
+    console.log($(clickedElement).find("img"));
+
+    if ($(clickedElement).find("img")[0].naturalHeight < $(clickedElement).find("img")[0].naturalWidth) {
+        console.log("W > H");
+        $(clickedElement).find("img").css("height", "auto")
+        $(clickedElement).find("img").css("width", "100%")
+        $(modalContent).css("width", "70%");
+        $(modalContent).css("height", "auto");
+    } else {
+        console.log("H > W");
+        $(clickedElement).find("img").css("height", screen.height*0.7+"px")
+        $(clickedElement).find("img").css("width", "auto")
+        $(modalContent).css("width", "auto");
+        $(modalContent).css("height", "auto");
+    }
+
+    $(clickedElement).find("img")[0].style.objectFit = "";
+
+    $(clickedElement).appendTo(modalContent);
 }
 
 function getContent() {
@@ -36,7 +67,7 @@ function parseXML(data) {
         var imageObj = [];
         var image = allImages[i];
         imageObj["title"] = image.getElementsByTagName("title")[0].textContent;
-        imageObj["id"] = image.getElementsByTagName("title")[0].textContent;
+        imageObj["id"] = image.getElementsByTagName("id")[0].textContent;
         imageObj["imgLink"] = image.getElementsByTagName("img")[0].textContent.trim();
         imageObj["alt"] = image.getElementsByTagName("alt")[0].textContent;
         imageObj["downloadLink"] = image.getElementsByTagName("download")[0].textContent;
@@ -57,7 +88,7 @@ function parseXML(data) {
 function showContent() {
     var contentElement = $("#content")[0];
     for (var i = 0; i < content.length; i++) {
-        var rowElement = $("<div class='w3-row-padding w3-margin-top'></div>");
+        var rowElement = $("<div class='w3-row-padding w3-margin'></div>");
         var rowContent = content[i];
         for (var j = 0; j < rowContent.length; j++) {
             var elementContent = rowContent[j]
@@ -67,12 +98,14 @@ function showContent() {
                     <div>
                         <img class="` + elementContent["class"] + `" style="object-fit:cover" height="300vh" width="100%" src="` + elementContent["imgLink"] + `" alt="` + elementContent["alt"] + `">
                     </div>
-                    <h3 class="w3-center">` + elementContent["title"] +
-                `</h3>
+                    <div class="w3-container">
+                        <p>` + elementContent["title"] + `</p>
+                    </div>
                 </div>
             </div>`);
             element.appendTo(rowElement);
         }
         rowElement.appendTo(contentElement);
     }
+    afterShowContent();
 }
