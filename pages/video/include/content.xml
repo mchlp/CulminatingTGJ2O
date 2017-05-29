@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <content>
     <video>
-        <title>Layering Assignment</title>
-        <id>layering</id>
-        <img>
-            <![CDATA[https://pzkcfg.by3302.livefilestore.com/y4mhRjHQvs3bkreSsQioD3D_pwdX9utNIeORUGfjO3U627qVZc0f8Wf-0X4Wmr2EOdwNcFN2LIQjSHqcBw9XQqiFpNRkCe7QhZycGmlgPzs2mV5QeDMKkhxa0sPfOpzxv3sQzvBnP3rL2Wjh1pWXoqzRcH2mZ5pJhW7vu9xxZMQ3Y-2l9DxHqHF3X6XFMCj63dBLTuHsgCTNQpR5VwbeRnEzQ?width=2400&height=3000&cropmode=none]]>
-        </img>
-        <class>blur</class>
-        <alt>Pu.Layering</alt>
+        <title>30 Second Stop Motion</title>
+        <id>30sec</id>
+        <url>
+            <![CDATA[https://onedrive.live.com/download?cid=B7BEE1220BC943D4&resid=B7BEE1220BC943D4%21147&authkey=AHVcgSarA59PYo0]]>
+        </url>
+        <class></class>
+        <download></download>
+    </video>
+
+    <video>
+        <title>3 Minute Stop Motion</title>
+        <id>3min</id>
+        <url>
+            <![CDATA[https://onedrive.live.com/download?cid=B7BEE1220BC943D4&resid=B7BEE1220BC943D4%21148&authkey=AFBi0HmVuUFAwxU]]>
+        </url>
+        <class></class>
+        <download></download>
+    </video>
+
+    <video>
+        <title>Chase Scene</title>
+        <id>chase</id>
+        <url>
+            <![CDATA[]]>
+        </url>
+        <class></class>
         <download></download>
     </video>
 </content>
