@@ -1,24 +1,37 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <content>
+
     <image>
-        <title>Business Card</title>
-        <id>businessCard</id>
+        <title>Magazine Cover</title>
+        <id>magazineCover</id>
         <img>
-            <![CDATA[https://qqc8cg.by3302.livefilestore.com/y4pHPp7PWtf3ioFGiSs9UNKR-bXhYhjJLDI6E3fjtMZtPhO3MR8EtrOXiDa5Kk58ckKmBGWBNw9rz3DNFgn30WjBJzlw0mPgFA9u24O5_TKv0wUN-h2r-waXEE4SMVkFzRJyjk1qDhT-LosP1j6dERFQrGIjSHgXsPsnTO3xh2v_V-LLN1HNct2bUxqNbCoKsxd0beQsQP1EnOiMUiwJnnAiA/Pu_BusinessCard.jpg?psid=1]]>
+            <![CDATA[https://qqc8cg.by3302.livefilestore.com/y4pO007d5aVcI8xt9ZFg3l6C8Fr4sydAmseEeOaK_20n3XPtddIkhMZlwgIydwJMeECJqOBWTRe2jh7Qb1tVWiGY4Z0xnfCbMsOaR_kU2a9r0HgrWxE4zJTYeSjevJOVrj2lRn6lCKjMMXQvR3U8wflh2DEvybpHSBp818xCB5DE408qMrkoljlN52-GUCTe7mWKnc6lP3UlfF0gm7d764fKQ/Pu_MagazineCover.jpg?psid=1]]>
         </img>
         <class></class>
-        <alt>Pu.BusinessCard</alt>
+        <alt>Pu.MagazineCover</alt>
         <download></download>
     </image>
 
     <image>
-        <title>Letter Head</title>
-        <id>letterHead</id>
+        <title>Two Page Spread</title>
+        <id>twoPageSpread</id>
         <img>
-            <![CDATA[https://qqc8cg.by3302.livefilestore.com/y4p5Sf38XU8DTChxKc8anxx_frbZ7gBJ5CVcw3j1SHOIo-s0jEN37t2BOIe_ECLKHfR9mwv6oISCEFhqVn0VqjXcrOeuahtzO92VzqJSHSsmVzn8e5fVjcH-4HOaLfVFRg4dqyPiCwxExIAimcBQZjBpF4d2D1B_ANSohdLOVBSL3aK0XgjOB8nW9JqMA5w-kFiHQd4o-KcIdfrYSE8cAPnEA/Pu_LetterheadNew.jpg?psid=1]]>
+            <![CDATA[https://qqc8cg.by3302.livefilestore.com/y4p0P2_hLnFDmV--dnOeyvR3Kk0feSsP6KvkzppzzOlvqXcO1oWQwZAa3F4PwyPpo1MVeJszRtjzYJ2k2f3lv-JWnWq9pj9F6Rz_Q6UzLiFuQRVTfXDxUuELfWvvpy_2DTyH2h1LQk7O91TfVraRiJ0hd8z2QM4qG09DZRALJN8jAJb_OKwcLB7tWs-kZuO8almrUb5WK4nHzouC42_DKzajg/Pu_2PgSpread.jpg?psid=1]]>
         </img>
         <class></class>
-        <alt>Pu.LetterHead</alt>
+        <alt>Pu.TwoPageSpread</alt>
         <download></download>
     </image>
+
+    <image>
+        <title>Asian Heritage Poster</title>
+        <id>asainHeritage</id>
+        <img>
+            <![CDATA[https://qqc8cg.by3302.livefilestore.com/y4pjKt9ajZCbqGgEaR6JQ96E7Y6pVSZJxbBMaO9DZPdM49T1E5SWEMDS20ENiXrG2_yvNRNBILW21rDtcny4y3Zv_NsTfrcXb6tivH5u0Sa2J4rphnp_UFnQsKHdsoIXFHEAvmMfO8ZWZbnkUNC833gS-K0ZkbOIr3tnLH-mTNOxnfOp52wrr8LDXRRMSlWJh_ZEOGyJvTmhmqd5AssMxyUCg/PuM_AsianHeritagePoster.jpg?psid=1]]>
+        </img>
+        <class></class>
+        <alt>Pu.AsainHeritage</alt>
+        <download></download>
+    </image>
+
 </content>

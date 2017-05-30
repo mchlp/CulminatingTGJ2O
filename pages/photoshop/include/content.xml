@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <content>
-    <image>
-        <title>Layering Assignment</title>
-        <id>layering</id>
-        <img>
-            <![CDATA[https://pzkcfg.by3302.livefilestore.com/y4mhRjHQvs3bkreSsQioD3D_pwdX9utNIeORUGfjO3U627qVZc0f8Wf-0X4Wmr2EOdwNcFN2LIQjSHqcBw9XQqiFpNRkCe7QhZycGmlgPzs2mV5QeDMKkhxa0sPfOpzxv3sQzvBnP3rL2Wjh1pWXoqzRcH2mZ5pJhW7vu9xxZMQ3Y-2l9DxHqHF3X6XFMCj63dBLTuHsgCTNQpR5VwbeRnEzQ?width=2400&height=3000&cropmode=none]]>
-        </img>
-        <class>blur</class>
-        <alt>Pu.Layering</alt>
-        <download></download>
-    </image>
 
     <image>
         <title>Vintage Advertisement</title>
@@ -34,24 +24,79 @@
     </image>
 
     <image>
-        <title>Photo Retouching</title>
-        <id>retouching</id>
+        <title>Collage Assignment</title>
+        <id>collage</id>
         <img>
-            <![CDATA[https://pzllua.by3302.livefilestore.com/y4mo165pocYtPlWQc434vPvaweCBBRoN1xb3AAeeJpTzxCa3H17Pb41DbXuserJizWVkb4X0--HVUWdbg_Vtr6Jy9_O9004mqrTFt1s_M4cQp1MKXM6o4c2S6bYH0Qnbl81YWHCXiPKeRFq0P0jXloxri3Qf9WrJepsMNLlQOiQw-nHedyLdtJuT-ZA3ekf9lrvB4MxAQlDyBHW2hkmJbCd8Q?width=453&height=500&cropmode=none]]>
+            <![CDATA[https://pzl6wg.by3302.livefilestore.com/y4pMFI1aL5aUHXmhm_WAcMCULHAfMIg-orVNRQa01KFjd9WQw9DUQiycRC6twCKEfxrBfMWiAn7Q3aAY70s6rNhrN6-P5eCXSY74Wiilwp_bDkSLpfOOWpB6ZoXao-SScQq3LgGSzUT711ln0GyOXS9lqFJAWRDCHpWjgK41-Otoo9cPKTCLy6o1Qd4u1LyYan0jFfOA03D1aLJSg3nTKnyvg/Pu.Collage.jpg?psid=1]]>
         </img>
         <class></class>
-        <alt>Pu.Retouching</alt>
+        <alt>Pu.Collage</alt>
+        <download></download>
+    </image>
+
+    <image>
+        <title>Art of Money</title>
+        <id>money</id>
+        <img>
+            <![CDATA[https://pzl6wg.by3302.livefilestore.com/y4pCySigyTqeyY09OyUfYrD9_s62MFPHMtvSLR5guVNVfE5IEYOjdlEUo7C47fClAuQNZwzPPLw3G0mgbw4xDexRasgjQGoYVaiE81NgoOVI6-ey5eRZ9d5Eu2a6yKwB9AgJXdF3OJAWNi6sz5htUu1gWw3Xc_6ynBKHhIYVW4SndkJKpz3UR68lY2mhxE2cwIInm163HaGCt-x24HC-ybCBA/Pu_ArtOfMoney.jpg?psid=1]]>
+        </img>
+        <class></class>
+        <alt>Pu.ArtOfMoney</alt>
+        <download></download>
+    </image>
+
+    <image>
+        <title>Infared</title>
+        <id>infared</id>
+        <img>
+            <![CDATA[https://pzl6wg.by3302.livefilestore.com/y4pcZgFW-tJtKifK4X05iAxB5w-fow9yBOJAckJ2RcvZmMN_Bg1R8c-UpLHMOfB2_DJea8KZxPr8LIlVE-wrW7PD6JAhp4HBdtSoi7UTbvm6TI2SPpIXoPTe3FI-2gDLq1mxn4xHt432DWaHr_mMGn-SeQT2-rrNoEsIvjDf7t_q0X6pqyay9bqUlmK3ruHZuUs8FAr_TY7-wPEUXbM2HLKdA/pu_michael_exploringdigitalmanipulation%20_Infared1.jpg?psid=1]]>
+        </img>
+        <class></class>
+        <alt>Pu.Infared</alt>
+        <download></download>
+    </image>
+
+    <image>
+        <title>Surrealism</title>
+        <id>surrealism</id>
+        <img>
+            <![CDATA[https://pzl6wg.by3302.livefilestore.com/y4pX-cC2h7mJByXOZoMCnTeZXT9R2iC0mvaezgKuTo7pAkXh8Q325CXKLIuhQLh7iIi44RVvaD1SCm5wMCf9SsHj7hiI3HNH4krawQor0pufn8d7VdcYmvVnZfrTG5W6lK5DX1GmDVby2Y0XBADkysIgRIy7CAUquHVKKZDYrRHWzaYHyAe1cMQCQj3lXXRhdKxf68jW12kp1UP7n7BdHZahA/pu_michael_exploringdigitalmanipulation%20_Surrealism.jpg?psid=1]]>
+        </img>
+        <class></class>
+        <alt>Pu.Surrealism</alt>
+        <download></download>
+    </image>
+
+    <image>
+        <title>Sepia Tone</title>
+        <id>sepia</id>
+        <img>
+            <![CDATA[https://pzl6wg.by3302.livefilestore.com/y4pYO1nJTRJcJFfcYeCU6YPcmMQddAkTnefvJtnuZa_5r5uCcVDEWd7psfD4v0TB1druRbZsnu1Fqye_YPf3qVv0LLkwsRsGzW29pvlG4i4Bwr_p4OPJmNalQ0XtVLPxi9oGwhLhZiRVsVrgq5SEmM9_XhGQ3Ypj-CGSFGzM98Iqtxp4zVhumaIW8-zt9ssTk-apzixd-cP0l-qLjCrSsOooA/pu_michael_exploringdigitalmanipulation%20_SepiaTone1.jpg?psid=1]]>
+        </img>
+        <class></class>
+        <alt>Pu.Sepia</alt>
+        <download></download>
+    </image>
+
+    <image>
+        <title>A Room With a View</title>
+        <id>room</id>
+        <img>
+            <![CDATA[https://pzl6wg.by3302.livefilestore.com/y4pxZ-oNVTtwfMUNEheAd17X7KM_OKSaKbslGznxX2jM0oGcG1oCtU7cU3a57XCRiBgIoDYaX1EvfM7_hIhuBtCaWL7CX06z7qF1MBMgLG3w4nQIpbLkY6-BhIFLoTNHGphtnptu94hgLa3H6MA31_k8PiEwYLzdSmECYQmX09rqfJu7JpmCo9TSe37nwrto6oIJz13o4xglnUOH498fRYTpw/pu_michael_exploringdigitalmanipulation%20_ARoomWithAView.jpg?psid=1]]>
+        </img>
+        <class></class>
+        <alt>Pu.RoomWithView</alt>
         <download></download>
     </image>
 
     <image>
         <title>Faux Painting</title>
-        <id>money</id>
+        <id>painting</id>
         <img>
-            <![CDATA[https://qqcn0a.by3302.livefilestore.com/y4mlM1PBJRPHu5AMj5NK3eM1Ws1A9NlY4gYxutiyL2O0_o4rgkah-e3VCBF6Fy2kGmOyKxp2i3Iol5oNHdUg0-0FYfsonxum-ZLn6tE4Q4IZrtP0i1ZRPSrdPfaZpT_-BJkfRU1vn0ywTO41OOreDY9gA9fOGBKYdFJlBcsOSu1PuNMLBYBwuHtji4VpZaSc-GeUY8I2A8ZyvqtO6LzkYGP2A?width=5332&height=3870&cropmode=none]]>
+            <![CDATA[https://pzl6wg.by3302.livefilestore.com/y4p3UNuI8N2JoG6BavJ6syi5elCrxfBzhTkekJhRpqzg6iD7Y5X32gy6U3kPeHXX0HKBhorJe5zc7EITE4NTrLlrw3O47dSmj4xfv9FAaa05-lMKefhli_7bpc79St5T_vrjzXwmmk9I9xowW2zEgiYz8u4NEP9WzOgG_PxDokrKKBc_xKq7GS8e9m9kBBkBjd7klLgQPWiDGktURv1nvjbPw/pu_michael_exploringdigitalmanipulation%20_FauxPainting2.jpg?psid=1]]>
         </img>
         <class></class>
-        <alt>Pu.ArtOfMoney</alt>
+        <alt>Pu.Painting</alt>
         <download></download>
     </image>
 
