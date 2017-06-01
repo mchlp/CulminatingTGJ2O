@@ -1,5 +1,13 @@
 var content = [];
-var opened = []
+var opened = [];
+var ready = [];
+
+var blinkCount = 0;
+var blinkMax = 7;
+var blinkInterval = null;
+
+var videosLoaded = false;
+var readyToPlay = [true, true, false];
 
 //when document is ready
 $(document).ready(pageReady);
@@ -8,6 +16,17 @@ $(document).ready(pageReady);
 function pageReady() {
     $("#video").addClass("w3-green");
     getContent();
+}
+
+//video player state changed
+function playerStateChange(num) {
+    ready[num] = true;
+    console.log(ready.toString() == readyToPlay.toString())
+    if (ready.toString() == readyToPlay.toString()) {
+        $("#loadingPanel").hide();
+        $("#readyPanel").show();
+        videosLoaded = true;
+    }
 }
 
 //after content is showed
@@ -21,25 +40,32 @@ function buttonPress() {
     buttonID = this.id;
     console.log(buttonID);
 
-    if (buttonID.includes("close-")) {
-        i = buttonID.substring(buttonID.search("[0-9]"), buttonID.search("[0-9]$") + 1);
-        if (opened[i]) {
-            opened[i] = false;
-            $("#video-" + i).hide();
-            $("#button-" + i)[0].children[0].innerText = "+";
-            $("#player-" + i)[0].pause();
-            $("#player-" + i)[0].currentTime = 0;
-        } else {
-            opened[i] = true;
-            $("#video-" + i).show();
-            for (var j = 0; j < opened.length; j++) {
-                $("#player-" + j)[0].pause();
-            }
+    if (!videosLoaded) {
+        $("#loadingPanel")[0].scrollIntoView();
+        startBlink($("#loadingPanel")[0]);
+    } else {
 
-            $("#button-" + i)[0].children[0].innerText = "-";
-            $("#player-" + i)[0].play();
+        if (buttonID.includes("close-")) {
+            i = buttonID.substring(buttonID.search("[0-9]"), buttonID.search("[0-9]$") + 1);
+            if (opened[i]) {
+                opened[i] = false;
+                $("#video-" + i).hide();
+                $("#button-" + i)[0].children[0].innerText = "+";
+                $("#player-" + i)[0].pause();
+                $("#player-" + i)[0].currentTime = 0;
+            } else {
+                opened[i] = true;
+                console.log($("#player-" + i)[0].readyState)
+                $("#video-" + i).show();
+                for (var j = 0; j < opened.length; j++) {
+                    $("#player-" + j)[0].pause();
+                }
+
+                $("#button-" + i)[0].children[0].innerText = "-";
+                $("#player-" + i)[0].play();
+            }
+            $("#close-" + i)[0].scrollIntoView();
         }
-        $("#close-" + i)[0].scrollIntoView();
     }
 }
 
@@ -82,7 +108,7 @@ function showContent() {
                 </span>
             </header>
             <div hidden id="video-` + i + `" class="w3-light-grey" style="text-align:center">
-                <video id="player-` + i + `" class="w3-margin" width="60%" height="auto" controls>
+                <video id="player-` + i + `" class="w3-margin" width="60%" height="auto" controls oncanplay="playerStateChange(` + i + `)">
                     <source src="` + elementContent["url"] + `"">
                     Your browser is unable to play the video.
                 </video>
@@ -90,6 +116,38 @@ function showContent() {
         </div>`);
         element.appendTo(contentElement);
         opened.push(false);
+        ready.push(false);
     }
     afterShowContent();
+}
+
+function startBlink(element) {
+    clearInterval(blinkInterval);
+    blinkInterval = setInterval(function() {blink(element)}, 200);
+}
+
+function blink(element) {
+    console.log(blinkCount)
+    blinkCount++;
+    if (blinkCount % 2 == 0) {
+        $(element).removeClass("w3-pale-red");
+        $(element).addClass("w3-red");
+        $($("#loadingPanel")[0].children[0]).removeClass("w3-pale-red");
+        $($("#loadingPanel")[0].children[0]).addClass("w3-red");
+    } else {
+        $(element).removeClass("w3-red");
+        $(element).addClass("w3-pale-red");
+        $($("#loadingPanel")[0].children[0]).removeClass("w3-red");
+        $($("#loadingPanel")[0].children[0]).addClass("w3-pale-red");
+    }
+    if (blinkCount > blinkMax) {
+        clearInterval(blinkInterval);
+        blinkCount = 0;
+        blinkInterval = null;
+        $(element).removeClass("w3-red");
+        $(element).addClass("w3-pale-red");
+        $($("#loadingPanel")[0].children[0]).removeClass("w3-red");
+        $($("#loadingPanel")[0].children[0]).addClass("w3-pale-red");
+    }
+
 }

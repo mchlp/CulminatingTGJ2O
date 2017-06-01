@@ -13,9 +13,13 @@
 
 <body>
     <div w3-include-html="/CulminatingTGJ2O/views/navBar.html"></div>
-    <div class="w3-panel w3-light-blue w3-display-container w3-leftbar w3-border-blue w3-border">
+    <div id="loadingPanel" class="w3-panel w3-pale-red w3-display-container w3-leftbar w3-border-red w3-border">
+        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-pale-red w3-large w3-display-topright">&times;</span>
+        <p>Please Wait For the Videos to Finish Loading...</p>
+    </div>
+    <div id="readyPanel" class="w3-panel w3-light-blue w3-display-container w3-leftbar w3-border-blue w3-border" hidden>
         <span onclick="this.parentElement.style.display='none'" class="w3-button w3-light-blue w3-large w3-display-topright">&times;</span>
-        <p>Click on a video title to view the video.</p>
+        <p>Click on a Video Title to View the Video.</p>
     </div>
     <div id="content" class="w3-margin"></div>
     <div id="content" class="w3-margin"></div>
