@@ -109,7 +109,7 @@ function showContent() {
             </header>
             <div hidden id="video-` + i + `" class="w3-light-grey" style="text-align:center">
                 <video id="player-` + i + `" class="w3-margin" width="60%" height="auto" controls oncanplay="playerStateChange(` + i + `)">
-                    <source src="` + elementContent["url"] + `"">
+                    <source src="`+elementContent["url"]+`">
                     Your browser is unable to play the video.
                 </video>
             </div>
