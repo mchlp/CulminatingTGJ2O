@@ -7,7 +7,7 @@ var blinkMax = 7;
 var blinkInterval = null;
 
 var videosLoaded = false;
-var readyToPlay = [true, true, false];
+var readyToPlay = [true, true, true];
 
 //when document is ready
 $(document).ready(pageReady);
