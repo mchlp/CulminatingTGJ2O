@@ -5,7 +5,7 @@
         <title>Magazine Cover</title>
         <id>magazineCover</id>
         <img>
-            /CulminatingTGJ2O/pages/indesign/include/Pu_MagazineCover.jpg
+            include/Pu_MagazineCover.jpg
         </img>
         <class></class>
         <alt>Pu.MagazineCover</alt>
@@ -16,7 +16,7 @@
         <title>Two Page Spread</title>
         <id>twoPageSpread</id>
         <img>
-            /CulminatingTGJ2O/pages/indesign/include/Pu_2PgSpread.jpg
+            include/Pu_2PgSpread.jpg
         </img>
         <class></class>
         <alt>Pu.TwoPageSpread</alt>
@@ -27,7 +27,7 @@
         <title>Asian Heritage Poster</title>
         <id>asainHeritage</id>
         <img>
-            /CulminatingTGJ2O/pages/indesign/include/PuM_AsianHeritagePoster.jpg
+            include/PuM_AsianHeritagePoster.jpg
         </img>
         <class></class>
         <alt>Pu.AsainHeritage</alt>
