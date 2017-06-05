@@ -5,7 +5,7 @@ $(document).ready(pageReady);
 
 //page ready
 function pageReady() {
-    $("#photoshop").addClass("w3-green");
+    $("#indesign").addClass("w3-green");
     getContent();
 }
 
