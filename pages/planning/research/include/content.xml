@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <content>
+
     <section>
         <title>Research Portfolio #1</title>
         <id>resPor1</id>
@@ -15,4 +16,19 @@
             is arranged into a visually appealing manner. My webpage features a dark grey and white colour scheme with a bit of green in an attempt to match the simple colour scheme in this portfolio.
         </text>
     </section>
+
+    <section>
+        <title>Research Portfolio #2</title>
+        <id>resPor2</id>
+        <img>
+            include/ryanscherf.png
+        </img>
+        <alt>Screenshot of http://ryanscherf.net/</alt>
+        <class></class>
+        <link>http://ryanscherf.net/</link>
+        <text>
+            This portfolio was created Ryan Scherf, a digital designer. Something I like about this portfolio is its modular design used to display his projects. The web page is designed with rectangles with shadows arranged rows and columns, each encasing one project. The shadow and rectangles give the webpage an overall materialistic feel, as stated on the Google Material Design Guidelines. I conprotated this feature into my portfolio by using a similar material layout to arrange my projects. My webpage features a grey rectangles with shadows which darken if you hover over them arranged in a grid-like fashion, each encasing one of my projects.
+        </text>
+    </section>
+
 </content>
