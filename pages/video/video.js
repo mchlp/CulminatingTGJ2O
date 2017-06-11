@@ -15,6 +15,7 @@ $(document).ready(pageReady);
 //page ready
 function pageReady() {
     $("#video").addClass("w3-green");
+    $("#gallery").addClass("w3-green");
     getContent();
 }
 

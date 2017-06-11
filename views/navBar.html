@@ -16,16 +16,36 @@
 
     <div id="navBar" class="fixed-nav-bar">
         <div class="w3-bar w3-dark-grey w3-card-2">
-
             <button id="home" class="w3-bar-item w3-button w3-border-right" onclick='window.open("/CulminatingTGJ2O/", "_self");'><i class="fa fa-home"></i></button>
-            <button id="photoshop" class="w3-bar-item w3-button w3-border-right" onclick='window.open("/CulminatingTGJ2O/pages/photoshop/", "_self")'>Photoshop</button>
-            <button id="photography" class="w3-bar-item w3-button w3-border-right" onclick='window.open("/CulminatingTGJ2O/pages/photography/", "_self")'>Basic Photography</button>
-            <button id="indesign" class="w3-bar-item w3-button w3-border-right" onclick='window.open("/CulminatingTGJ2O/pages/indesign/", "_self")'>InDesign</button>
-            <button id="video" class="w3-bar-item w3-button w3-border-right" onclick='window.open("/CulminatingTGJ2O/pages/video/", "_self")'>Video Editing</button>
+
+            <div class="w3-dropdown-hover">
+                <button id="planning" class="w3-button w3-border-right">Planning</button>
+                <div class="w3-dropdown-content w3-bar-block w3-light-grey w3-border">
+                    <button id="diagram" class="w3-bar-item w3-button" onclick='window.open("/CulminatingTGJ2O/pages/photoshop/", "_self")'>Diagrams</button>
+                </div>
+            </div>
+
+            <div class="w3-dropdown-hover">
+                <button id="planning" class="w3-button w3-border-right">Reflections</button>
+                <div class="w3-dropdown-content w3-bar-block w3-light-grey w3-border">
+                    <button id="artOfMoney" class="w3-bar-item w3-button" onclick='window.open("/CulminatingTGJ2O/pages/photoshop/", "_self")'>Art Of Money</button>
+                </div>
+            </div>
+
+            <div class="w3-dropdown-hover">
+                <button id="gallery" class="w3-button w3-border-right">Gallery</button>
+                <div class="w3-dropdown-content w3-bar-block w3-light-grey w3-border">
+                    <button id="photoshop" class="w3-bar-item w3-button w3-border-bottom" onclick='window.open("/CulminatingTGJ2O/pages/photoshop/", "_self")'>Photoshop</button>
+                    <button id="photography" class="w3-bar-item w3-button w3-border-bottom" onclick='window.open("/CulminatingTGJ2O/pages/photography/", "_self")'>Basic Photography</button>
+                    <button id="indesign" class="w3-bar-item w3-button w3-border-bottom" onclick='window.open("/CulminatingTGJ2O/pages/indesign/", "_self")'>InDesign</button>
+                    <button id="video" class="w3-bar-item w3-button" onclick='window.open("/CulminatingTGJ2O/pages/video/", "_self")'>Video Editing</button>
+                </div>
+            </div>
 
             <div style="float:right">
                 <button class="w3-bar-item w3-button w3-border-left w3-green">Michael Pu - TGJ2O</button>
             </div>
         </div>
-    </body>
+</body>
+
 </html>
