@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<content>
+    <section>
+        <title>Research Portfolio #1</title>
+        <id>resPor1</id>
+        <img>
+            include/hihayk.png
+        </img>
+        <alt>Screenshot of http://www.hihayk.com/</alt>
+        <class></class>
+        <link>http://www.hihayk.com/</link>
+        <text>
+            This portfolio was created hayk, an self-taught designer and coder. Something I like about this portfolio is its simplistic design and cohesive colour scheme. The web page is designed with short lines of text as well as simple graphics, which are
+            very effective in conveying his ideas. The overall grey colour scheme with a tint of teal is quite visually appealing. I conprotated these into my portfolio by including as little text as necessary, and where long chunks of text are needed, the text
+            is arranged into a visually appealing manner. My webpage features a dark grey and white colour scheme with a bit of green in an attempt to match the simple colour scheme in this portfolio.
+        </text>
+    </section>
+</content>
