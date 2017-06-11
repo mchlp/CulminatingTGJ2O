@@ -1,7 +1,7 @@
 .imageContainer {
     width: 200px;
     height: 200px;
-    background-image: url("../includes/headerImage.jpg");
+    background-image: url("/CulminatingTGJ2O/includes/headerImage.jpg");
     background-size: 100% auto;
 }
 
