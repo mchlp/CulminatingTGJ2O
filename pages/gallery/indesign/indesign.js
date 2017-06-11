@@ -95,7 +95,7 @@ function showContent() {
             var elementContent = rowContent[j]
             var element = $(`
             <div class="w3-third">
-                <div id="` + elementContent["id"] + `" class="w3-card w3-hover-shadow w3-grey _image" style="text-align:center">
+                <div id="` + elementContent["id"] + `" class="w3-card w3-hover-shadow w3-grey _image hand-hover" style="text-align:center">
                     <div>
                         <img class="` + elementContent["class"] + `" style="object-fit:cover" height="300vh" width="100%" src="` + elementContent["imgLink"] + `" alt="` + elementContent["alt"] + `">
                     </div>
