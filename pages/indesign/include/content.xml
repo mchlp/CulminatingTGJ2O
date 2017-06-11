@@ -22,16 +22,4 @@
         <alt>Pu.TwoPageSpread</alt>
         <download></download>
     </image>
-
-    <image>
-        <title>Asian Heritage Poster</title>
-        <id>asainHeritage</id>
-        <img>
-            include/PuM_AsianHeritagePoster.jpg
-        </img>
-        <class></class>
-        <alt>Pu.AsainHeritage</alt>
-        <download></download>
-    </image>
-
 </content>
