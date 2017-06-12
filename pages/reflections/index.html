@@ -15,9 +15,22 @@
 <body>
     <div w3-include-html="../../views/navBar.html"></div>
 
+    <div class="w3-panel w3-light-blue w3-display-container w3-leftbar w3-border-blue w3-border">
+        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-light-blue w3-large w3-display-topright">&times;</span>
+        <p>Use the arrow keys on your keyboard, the arrows on the side of the page, or the numbers below to navigate through all the projects.</p>
+    </div>
+
     <div class="w3-display-container">
 
-        <div class="w3-display-topmiddle w3-display-container w3-margin" style="width:80%">
+        <div class="w3-display-topmiddle w3-display-container w3-margin" style="width:70%">
+
+            <div class="w3-center w3-margin-bottom w3-grey">
+                <button class="w3-button dots" onclick="currentDiv(1)">1</button>
+                <button class="w3-button dots" onclick="currentDiv(2)">2</button>
+                <button class="w3-button dots" onclick="currentDiv(3)">3</button>
+                <button class="w3-button dots" onclick="currentDiv(4)">4</button>
+                <button class="w3-button dots" onclick="currentDiv(5)">5</button>
+            </div>
 
             <div id="content"></div>
 

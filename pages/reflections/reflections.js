@@ -11,6 +11,7 @@ function pageReady() {
 }
 
 function afterShowContent() {
+    document.onkeydown = keydown;
     showDivs(slideIndex);
     $("._image").click(buttonPress);
     $(document)[0].addEventListener('click', function() {
@@ -99,7 +100,7 @@ function showContent() {
     for (var i = 0; i < content.length; i++) {
         var sectionContent = content[i];
         var element = $(`<div class="w3-card w3-hover-shadow slide ` + sectionContent["class"] + `">
-            <header class="w3-container w3-blue">
+            <header class="w3-container w3-blue w3-center">
                 <h3>` + sectionContent["title"] + `</h3>
             </header>
             <div class="w3-container w3-light-grey">
@@ -119,9 +120,14 @@ function plusDivs(n) {
     showDivs(slideIndex += n);
 }
 
+function currentDiv(n) {
+    showDivs(slideIndex = n);
+}
+
 function showDivs(n) {
     var i;
     var x = document.getElementsByClassName("slide");
+    var dots = document.getElementsByClassName("dots");
     if (n > x.length) {
         slideIndex = 1
     }
@@ -131,5 +137,22 @@ function showDivs(n) {
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("w3-red", "");
+    }
     x[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " w3-red";
+}
+
+//keydown event handler
+function keydown(e) {
+    console.log(e.code);
+    switch (e.code) {
+        case "ArrowLeft":
+            showDivs(slideIndex -= 1);
+            break;
+        case "ArrowRight":
+            showDivs(slideIndex += 1);
+            break;
+    }
 }
