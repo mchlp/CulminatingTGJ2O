@@ -13,6 +13,19 @@ function pageReady() {
 function afterShowContent() {
     showDivs(slideIndex);
     $("._image").click(buttonPress);
+    $(document)[0].addEventListener('click', function() {
+        try {
+            if (!($("#_video")[0].paused)) {
+                closeVideo();
+            }
+        } catch (TypeError) {}
+    });
+}
+
+function closeVideo() {
+    console.log("CLOSE")
+    $("#_video")[0].pause();
+    $("#_video")[0].currentTime = 0;
 }
 
 function buttonPress() {
@@ -21,24 +34,38 @@ function buttonPress() {
     $("#modal")[0].style.display = "block";
     var modalContent = $("#modal-content")[0];
     $(modalContent).empty();
-    var clickedElement = $(this).clone();
-    console.log(clickedElement)
 
-    if ($(clickedElement).naturalHeight < $(clickedElement).naturalWidth) {
-        console.log("W > H");
-        $(clickedElement).find("img").css("height", "auto")
-        $(clickedElement).find("img").css("width", "100%")
-        $(modalContent).css("width", "60%");
-        $(modalContent).css("height", "auto");
+    var videos = ["refStopMotion"];
+
+    console.log(buttonID)
+
+    if (videos.indexOf(buttonID) > -1) {
+        var element = $(`<div style="text-align:center">
+            <video id="_video" class="w3-margin" width="90%" height="auto" controls autoplay>
+                <source src="/CulminatingTGJ2O/pages/gallery/video/include/stopMotion2.mp4">
+                Your browser is unable to play the video.
+            </video>
+        </div>`);
+        element.appendTo(modalContent);
     } else {
-        console.log("H > W");
-        $(clickedElement).find("img").css("height", screen.height*0.6+"px")
-        $(clickedElement).find("img").css("width", "auto")
-        $(modalContent).css("width", "auto");
-        $(modalContent).css("height", "auto");
+        clickedElement = $(this).clone();
+
+        if ($(clickedElement).naturalHeight < $(clickedElement).naturalWidth) {
+            console.log("W > H");
+            $(clickedElement).find("img").css("height", "auto")
+            $(clickedElement).find("img").css("width", "100%")
+            $(modalContent).css("width", "60%");
+            $(modalContent).css("height", "auto");
+        } else {
+            console.log("H > W");
+            $(clickedElement).find("img").css("height", screen.height * 0.6 + "px")
+            $(clickedElement).find("img").css("width", "auto")
+            $(modalContent).css("width", "auto");
+            $(modalContent).css("height", "auto");
+        }
+        clickedElement.appendTo(modalContent);
     }
 
-    $(clickedElement).appendTo(modalContent);
 }
 
 function getContent() {
@@ -71,15 +98,15 @@ function showContent() {
     var contentElement = $("#content")[0];
     for (var i = 0; i < content.length; i++) {
         var sectionContent = content[i];
-        var element = $(`<div class="w3-card w3-hover-shadow slide `+sectionContent["class"]+`" id="`+sectionContent["id"]+`">
+        var element = $(`<div class="w3-card w3-hover-shadow slide ` + sectionContent["class"] + `">
             <header class="w3-container w3-blue">
-                <h3>`+sectionContent["title"]+`</h3>
+                <h3>` + sectionContent["title"] + `</h3>
             </header>
             <div class="w3-container w3-light-grey">
                 <div class="w3-margin" style="overflow:hidden">
-                    <center><img class="hand-hover _image" src="`+sectionContent["img"]+`" style="height:500px"></center>
-                    <h4><strong>Software Used: </strong>`+sectionContent["software"]+`</h4>
-                    <p>`+sectionContent["text"]+`</p>
+                    <center><img class="hand-hover _image" src="` + sectionContent["img"] + `" style="height:500px" id="` + sectionContent["id"] + `"></center>
+                    <h4><strong>Software Used: </strong>` + sectionContent["software"] + `</h4>
+                    <p>` + sectionContent["text"] + `</p>
                 </div>
             </div>
         </div>`);
