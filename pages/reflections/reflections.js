@@ -92,6 +92,7 @@ function parseXML(data) {
         }
         content.push(sectionObj)
     }
+    console.log(content);
     showContent();
 }
 
@@ -106,8 +107,10 @@ function showContent() {
             <div class="w3-container w3-light-grey">
                 <div class="w3-margin" style="overflow:hidden">
                     <center><img class="hand-hover _image" src="` + sectionContent["img"] + `" style="height:500px" id="` + sectionContent["id"] + `"></center>
-                    <h4><strong>Software Used: </strong>` + sectionContent["software"] + `</h4>
-                    <p>` + sectionContent["text"] + `</p>
+                    <div class="w3-card w3-container w3-margin w3-hover-shadow w3-grey">
+                        <h4><strong>Software Used: </strong>` + sectionContent["software"] + `</h4>
+                        <p>` + sectionContent["text"] + `</p>
+                    </div>
                 </div>
             </div>
         </div>`);
