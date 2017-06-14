@@ -5,7 +5,7 @@
         <title>Art Of Money</title>
         <id>refArtOfMoney</id>
         <img>
-            /CulminatingTGJ2O/pages/gallery/photoshop/include/Pu_ArtOfMoney.jpg
+            /sites/CulminatingTGJ2O/pages/gallery/photoshop/include/Pu_ArtOfMoney.jpg
         </img>
         <alt>Art Of Money</alt>
         <class></class>
@@ -23,7 +23,7 @@
         <title>Asian Heritage Poster</title>
         <id>refAsianHeritage</id>
         <img>
-            /CulminatingTGJ2O/pages/gallery/photoshop/include/PuM_AsianHeritagePoster.jpg
+            /sites/CulminatingTGJ2O/pages/gallery/photoshop/include/PuM_AsianHeritagePoster.jpg
         </img>
         <alt>Asian Heritage</alt>
         <class></class>
@@ -41,7 +41,7 @@
         <title>Magazine Cover</title>
         <id>refMagazineCover</id>
         <img>
-            /CulminatingTGJ2O/pages/gallery/indesign/include/Pu_MagazineCover.jpg
+            /sites/CulminatingTGJ2O/pages/gallery/indesign/include/Pu_MagazineCover.jpg
         </img>
         <alt>Magazine Cover</alt>
         <class></class>
@@ -59,7 +59,7 @@
         <title>Two Page Spread</title>
         <id>refTwoPageSpread</id>
         <img>
-            /CulminatingTGJ2O/pages/gallery/indesign/include/Pu_2PgSpread.jpg
+            /sites/CulminatingTGJ2O/pages/gallery/indesign/include/Pu_2PgSpread.jpg
         </img>
         <alt>2 Page Spread</alt>
         <class></class>
@@ -77,11 +77,11 @@
         <title>Stop Motion Animation</title>
         <id>refStopMotion</id>
         <img>
-            /CulminatingTGJ2O/pages/gallery/video/include/stopMotionScreenshot.jpg
+            /sites/CulminatingTGJ2O/pages/gallery/video/include/stopMotionScreenshot.jpg
         </img>
         <alt>Stop Motion Animation</alt>
         <class></class>
-        <expand>/CulminatingTGJ2O/pages/gallery/video/include/stopMotion2.mp4</expand>
+        <expand>/sites/CulminatingTGJ2O/pages/gallery/video/include/stopMotion2.mp4</expand>
         <software>Microsoft Movie Maker</software>
         <text>
             This piece of work is an example banknote of a fictitious currency. The background depicts a circuit board-like design along with the silhouette of a city or the solar system. A picture of the sun as well as the globe and an atom are included on the
