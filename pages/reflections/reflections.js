@@ -43,7 +43,7 @@ function buttonPress() {
     if (videos.indexOf(buttonID) > -1) {
         var element = $(`<div style="text-align:center">
             <video id="_video" class="w3-margin" width="90%" height="auto" controls autoplay>
-                <source src="/sites/CulminatingTGJ2O/pages/gallery/video/include/stopMotion2.mp4">
+                <source src="/CulminatingTGJ2O/pages/gallery/video/include/stopMotion2.mp4">
                 Your browser is unable to play the video.
             </video>
         </div>`);
