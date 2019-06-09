@@ -24,7 +24,6 @@ function afterShowContent() {
 }
 
 function closeVideo() {
-    console.log("CLOSE")
     $("#_video")[0].pause();
     $("#_video")[0].currentTime = 0;
 }
@@ -38,8 +37,6 @@ function buttonPress() {
 
     var videos = ["refStopMotion"];
 
-    console.log(buttonID)
-
     if (videos.indexOf(buttonID) > -1) {
         var element = $(`<div style="text-align:center">
             <video id="_video" class="w3-margin" width="90%" height="auto" controls autoplay>
@@ -52,13 +49,11 @@ function buttonPress() {
         clickedElement = $(this).clone();
 
         if ($(clickedElement).naturalHeight < $(clickedElement).naturalWidth) {
-            console.log("W > H");
             $(clickedElement).find("img").css("height", "auto")
             $(clickedElement).find("img").css("width", "100%")
             $(modalContent).css("width", "60%");
             $(modalContent).css("height", "auto");
         } else {
-            console.log("H > W");
             $(clickedElement).find("img").css("height", screen.height * 0.6 + "px")
             $(clickedElement).find("img").css("width", "auto")
             $(modalContent).css("width", "auto");
@@ -71,7 +66,7 @@ function buttonPress() {
 
 function getContent() {
     var rawContent = new XMLHttpRequest();
-    rawContent.open("GET", "include/content.xml", true);
+    rawContent.open("GET", "./reflections/include/content.xml", true);
     rawContent.onload = function() {
         if (this.readyState == 4 && this.status == 200) {
             parseXML(this.responseXML);
@@ -92,7 +87,6 @@ function parseXML(data) {
         }
         content.push(sectionObj)
     }
-    console.log(content);
     showContent();
 }
 
@@ -149,7 +143,6 @@ function showDivs(n) {
 
 //keydown event handler
 function keydown(e) {
-    console.log(e.code);
     switch (e.code) {
         case "ArrowLeft":
             showDivs(slideIndex -= 1);

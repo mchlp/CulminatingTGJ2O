@@ -5,7 +5,7 @@
         <title>Research Portfolio #1</title>
         <id>resPor1</id>
         <img>
-            include/hihayk.png
+            research/include/hihayk.png
         </img>
         <alt>Screenshot of http://www.hihayk.com/</alt>
         <class></class>
@@ -19,7 +19,7 @@
         <title>Research Portfolio #2</title>
         <id>resPor2</id>
         <img>
-            include/ryanscherf.png
+            research/include/ryanscherf.png
         </img>
         <alt>Screenshot of http://ryanscherf.net/</alt>
         <class></class>
@@ -33,7 +33,7 @@
         <title>Research Portfolio #3</title>
         <id>resPor3</id>
         <img>
-            include/jakobdeboer.png
+            research/include/jakobdeboer.png
         </img>
         <alt>Screenshot of http://jakobdeboer.com/work/</alt>
         <class></class>

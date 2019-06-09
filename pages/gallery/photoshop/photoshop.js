@@ -22,20 +22,14 @@ function buttonPress() {
     var modalContent = $("#modal-content")[0];
     $(modalContent).empty();
 
-    console.log($(this).find("img"));
-
     var clickedElement = $(this).clone();
 
-    console.log($(clickedElement).find("img"));
-
     if ($(clickedElement).find("img")[0].naturalHeight < $(clickedElement).find("img")[0].naturalWidth) {
-        console.log("W > H");
         $(clickedElement).find("img").css("height", "auto")
         $(clickedElement).find("img").css("width", "100%")
         $(modalContent).css("width", "60%");
         $(modalContent).css("height", "auto");
-    } else {
-        console.log("H > W");
+    } else {       
         $(clickedElement).find("img").css("height", screen.height*0.6+"px")
         $(clickedElement).find("img").css("width", "auto")
         $(modalContent).css("width", "auto");
@@ -59,8 +53,6 @@ function getContent() {
 }
 
 function parseXML(data) {
-    console.log(data);
-    console.log(allImages);
     var allImages = data.getElementsByTagName("image");
     colCount = 1;
     colObjs = [];

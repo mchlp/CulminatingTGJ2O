@@ -22,7 +22,6 @@ function pageReady() {
 //video player state changed
 function playerStateChange(num) {
     ready[num] = true;
-    console.log(ready.toString() == readyToPlay.toString())
     if (ready.toString() == readyToPlay.toString()) {
         $("#loadingPanel").hide();
         $("#readyPanel").show();
@@ -39,7 +38,6 @@ function afterShowContent() {
 //button pressed
 function buttonPress() {
     buttonID = this.id;
-    console.log(buttonID);
 
     if (!videosLoaded) {
         $("#loadingPanel")[0].scrollIntoView();
@@ -56,7 +54,6 @@ function buttonPress() {
                 $("#player-" + i)[0].currentTime = 0;
             } else {
                 opened[i] = true;
-                console.log($("#player-" + i)[0].readyState)
                 $("#video-" + i).show();
                 for (var j = 0; j < opened.length; j++) {
                     $("#player-" + j)[0].pause();
@@ -82,7 +79,6 @@ function getContent() {
 }
 
 function parseXML(data) {
-    console.log(data);
     var allVideos = data.getElementsByTagName("video");
     for (var i = 0; i < allVideos.length; i++) {
         var videoObj = [];
@@ -128,7 +124,6 @@ function startBlink(element) {
 }
 
 function blink(element) {
-    console.log(blinkCount)
     blinkCount++;
     if (blinkCount % 2 == 0) {
         $(element).removeClass("w3-pale-red");

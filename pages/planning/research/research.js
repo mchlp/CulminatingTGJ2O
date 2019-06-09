@@ -13,7 +13,7 @@ function pageReady() {
 //get content
 function getContent() {
     var rawContent = new XMLHttpRequest();
-    rawContent.open("GET", "include/content.xml", true);
+    rawContent.open("GET", "./research/include/content.xml", true);
     rawContent.onload = function() {
         if (this.readyState == 4 && this.status == 200) {
             parseXML(this.responseXML);
@@ -23,7 +23,6 @@ function getContent() {
 }
 
 function parseXML(data) {
-    console.log(data);
     var allSections = data.getElementsByTagName("section");
     for (var i = 0; i < allSections.length; i++) {
         var sectionObj = [];
